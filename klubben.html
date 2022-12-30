@@ -11,51 +11,11 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <header class="bg-light">
-      <nav class="navbar navbar-expand-sm bg-light">
-        <div class="container-fluid justify-content-center">
-          <a class="navbar-brand m-2" href="index.html"><img src="./img/logotransparant.png" alt="" width="100px" /></a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Hjem</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Om Klubben
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="svomming.html">Om VIF</a></li>
-                  <li><a class="dropdown-item" href="innebandy.html">Styret</a></li>
-                  <li><a class="dropdown-item" href="trimogturn.html">Bli Medlem</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sports
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="svomming.html">Svømming</a></li>
-                  <li><a class="dropdown-item" href="innebandy.html">Innebandy</a></li>
-                  <li><a class="dropdown-item" href="trimogturn.html">Trim og Turn</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-primary">
+        <a class="navbar-brand mx-4" href="index.html"
+          ><img src="./img/vardenesetiflogotransparant.png" alt="Vardeneset Idrettsforening Logo" width="100px"
+        /></a>
         <button
           class="navbar-toggler mx-4 mb-1"
           type="button"
@@ -67,11 +27,53 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Hjem</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Klubben
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="klubben.html">Om VIF</a></li>
+                <li><a class="dropdown-item" href="styret.html">Styret</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sports
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="svomming.html">Svømming</a></li>
+                <li><a class="dropdown-item" href="innebandy.html">Innebandy</a></li>
+                <li><a class="dropdown-item" href="trimogturn.html">Trim og Turn</a></li>
+              </ul>
+            </li>
+            <li class="nav-link text-sm-end w-100">
+              <a href="mailto: post@vardeneset.no"> post@vardenesetif.no </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
       <h1 class="text-center p-3">Om Klubben</h1>
-      <div class="w-75 m-auto">
+      <div class="container">
         <p>
           21. november 1975 ble Vardeneset Idrettsforening (VIF) stiftet. Vi holder fremdeles på med våre aktiviteter,
           turn, svømming, innebandy for både barn og voksne. Treningene er lagt til Vardenes Skole og Fjellhallen
@@ -86,31 +88,33 @@
         <p>
           Har du noe du brenne for eller noe du kan bidra med? Da kan du ta kontakt her. Mange av våre unge instuktører
           er bydels ungdommer og en flotte mulighet for dem å tjene noen kroner. Ta kontakt om du har en ungdom hjemme
-          som kanskje er interessert å jobbe for oss. For at VIF skal har en framtid, trenger vi dere til å være med,
-          som deltakere, oppmann, trenere og instruktører eller til å sitt i styret. LEDIG STILLING: Styreleder LEDIG
-          STILLING: Svømme Instruktør – opplæring og kurs følge med Ta kontakt for mer informasjon
+          som kanskje er interessert å jobbe for oss. <br />
+          For at VIF skal har en framtid, trenger vi dere til å være med, som deltakere, oppmann, trenere og
+          instruktører eller til å sitte i styret.
         </p>
+        <ul>
+          <li>LEDIG STILLING: Styreleder</li>
+          <li>LEDIG STILLING: Svømme Instruktør - opplæring og kurs følger med</li>
+        </ul>
+        <p>Ta kontakt for mer informasjon</p>
+        <a href="mailto: post@vardeneset.no"> post@vardenesetif.no </a>
       </div>
     </main>
-    <footer class="bg-light mt-auto">
-      <ul class="nav justify-content-center pt-2">
-        <li class="nav-item">
-          <a href=".html" class="nav-link px-2"></a>
-        </li>
-        <li class="nav-item">
-          <a href=".html" class="nav-link px-2"></a>
-        </li>
-        <li class="nav-item">
-          <a href=".html" class="nav-link px-2"></a>
-        </li>
-        <li class="nav-item">
-          <a href=".html" class="nav-link px-2"></a>
-        </li>
-      </ul>
-      <p class="text-center">
-        © 2022 Vardeneset Idrettsforening - Webside design <a href="https://andrewhay.no/"> Andrew Hay </a>
+    <footer class="bg-primary mt-auto">
+      <p class="text-center pt-2 m-0">
+        © 2022 Vardeneset Idrettsforening - Org no:
+        <a
+          class="d-inline-block"
+          href="https://w2.brreg.no/enhet/sok/detalj.jsp;jsessionid=cSs1GLdZ1XeTsUQDtjxc0eKLNoMFXtaLhAXlwBM9Q3IHYoT7QvgB!-1871856883!-531682848?orgnr=975658570"
+          target="_blank"
+          rel="noopener noreferrer"
+          >975 658 570</a
+        >
       </p>
-      <p class="text-center">Org no: 975 658 570</p>
+      <p class="text-center m-0">Postboks 5007, Dusavik 4084 Stavanger</p>
+      <p class="text-center pb-2 m-0">
+        Design av <a href="https://andrewhay.no/" target="_blank" rel="noopener noreferrer"> Andrew Hay </a>
+      </p>
     </footer>
   </body>
 </html>
