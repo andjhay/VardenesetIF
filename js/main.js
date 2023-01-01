@@ -1,7 +1,4 @@
-import { postUrl } from "./api.mjs";
-import { fetchPosts } from "./fetch.mjs";
-
-const posts = await fetchPosts(postUrl);
+import { posts } from "./fetch.js";
 
 console.log(posts);
 

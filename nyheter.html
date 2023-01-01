@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./img/vardenesetif.ico" />
     <meta name="theme-color" content="#ACD6F4" />
@@ -12,7 +13,7 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="./js/main.mjs" type="module" defer></script>
+    <script src="./js/main.js" type="module" defer></script>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
@@ -80,6 +81,7 @@
     </header>
     <main>
       <h1 class="text-center p-3">Nyheter</h1>
+      <h3 class="text-center p-3">Kommer snart</h3>
       <div id="newsContainer" class="container"></div>
     </main>
     <footer class="bg-primary mt-auto">
