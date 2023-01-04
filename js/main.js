@@ -1,7 +1,5 @@
 import { postsData } from "./fetch.js";
 
-console.log(postsData);
-
 const pathOriginal = location.pathname;
 const path = pathOriginal.slice(pathOriginal.lastIndexOf("/") + 1);
 
@@ -9,6 +7,7 @@ console.log(path);
 
 function loadPosts(postsData) {
   const newsContainer = document.querySelector("#newsContainer");
+  console.log(newsContainer.innerHTML);
   newsContainer.innerHTML = "";
   postsData.forEach((post) => {
     const dateFormat = `${post.date.slice(8, 10) + "-" + post.date.slice(5, 7) + "-" + post.date.slice(0, 4)}`;

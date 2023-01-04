@@ -65,9 +65,10 @@ $navbar-toggler-transition: box-shadow 0.3s ease-in-out !default;
 
 $dropdown-color: $main;
 $dropdown-bg: $white;
-$dropdown-link-hover-bg: $main;
+$dropdown-link-hover-bg: $white;
+$dropdown-link-hover-color: $logo;
 $dropdown-link-active-color: $logo;
-$dropdown-link-active-bg: $main;
+$dropdown-link-active-bg: $white;
 
 $dropdown-min-width: 0;
 $dropdown-padding-y: 0;
