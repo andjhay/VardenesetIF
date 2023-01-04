@@ -6,4 +6,4 @@ export async function getPosts() {
   return results;
 }
 
-export const posts = await getPosts();
+export const postsData = await getPosts();

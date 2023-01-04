@@ -17,7 +17,7 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header class="bg-primary shadow">
-      <nav class="navbar navbar-expand-md w-75 m-auto">
+      <nav class="navbar navbar-expand-md container">
         <a class="navbar-brand mx-4" href="index.html"
           ><img src="./img/vardenesetiflogotransparant.png" alt="Vardeneset Idrettsforening Logo" width="100px"
         /></a>
@@ -48,7 +48,7 @@
                 Klubben
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="klubben.html">Om VIF</a></li>
+                <li><a class="dropdown-item" href="omvif.html">Om VIF</a></li>
                 <li><a class="dropdown-item" href="styret.html">Styret</a></li>
               </ul>
             </li>
@@ -79,9 +79,12 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1 class="text-center p-3">Nyheter</h1>
-      <div id="newsContainer" class="row row-cols-1 row-cols-lg-2 w-75 m-auto pb-5"></div>
+      <div id="newsContainer" class="pb-5">
+        <h5 class="text-center">Laster nyheter</h5>
+        <div class="loading"></div>
+      </div>
     </main>
     <footer class="bg-primary mt-auto">
       <p class="text-center pt-2 m-0">

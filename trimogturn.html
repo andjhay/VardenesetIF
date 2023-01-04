@@ -14,8 +14,16 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0"
+      nonce="S3vImUQ1"
+    ></script>
     <header class="bg-primary shadow">
-      <nav class="navbar navbar-expand-md w-75 m-auto">
+      <nav class="navbar navbar-expand-md container">
         <a class="navbar-brand mx-4" href="index.html"
           ><img src="./img/vardenesetiflogotransparant.png" alt="Vardeneset Idrettsforening Logo" width="100px"
         /></a>
@@ -46,7 +54,7 @@
                 Klubben
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="klubben.html">Om VIF</a></li>
+                <li><a class="dropdown-item" href="omvif.html">Om VIF</a></li>
                 <li><a class="dropdown-item" href="styret.html">Styret</a></li>
               </ul>
             </li>
@@ -80,9 +88,9 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1 class="text-center p-3">Trim og Turn</h1>
-      <div class="row row-cols-1 row-cols-lg-2 w-75 m-auto pb-5">
+      <div class="row row-cols-1 row-cols-lg-2 pb-5">
         <div class="col">
           <h5>Mandag</h5>
           <table class="table table-striped">
@@ -117,12 +125,21 @@
             </tr>
           </table>
           <p>Priser Ungdom/Voksne: kr. 600,- pr. halvår + 100,- medl. avgift pr. år.</p>
-          <p>
-            Det er mer info på facebook siden
-            <a href="https://www.facebook.com/viftrening/" target="_blank" rel="noopener noreferrer"
-              >www.facebook.com/viftrening/</a
-            >
-          </p>
+          <div
+            class="fb-page pb-3"
+            data-href="https://www.facebook.com/viftrening/"
+            data-tabs=""
+            data-width=""
+            data-height=""
+            data-small-header="true"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="false"
+          >
+            <blockquote cite="https://www.facebook.com/viftrening/" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/viftrening/">VIF Trening</a>
+            </blockquote>
+          </div>
         </div>
         <div class="col">
           <iframe
