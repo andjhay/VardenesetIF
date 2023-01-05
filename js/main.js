@@ -7,12 +7,14 @@ console.log(path);
 
 function loadPosts(postsData) {
   const newsContainer = document.querySelector("#newsContainer");
-  console.log(newsContainer.innerHTML);
   newsContainer.innerHTML = "";
   postsData.forEach((post) => {
     const dateFormat = `${post.date.slice(8, 10) + "-" + post.date.slice(5, 7) + "-" + post.date.slice(0, 4)}`;
-
-    newsContainer.innerHTML += `<div class="col container my-2"><div class="card p-3"><h2 class="text-center">${post.title.rendered}</h2><h5>Dato: ${dateFormat}</h5>${post.content.rendered}</div></div>`;
+    newsContainer.innerHTML += `
+    <div class="card p-3 shadow">
+      <h2 class="text-center">${post.title.rendered}</h2>
+      <h5>Dato: ${dateFormat}</h5>${post.content.rendered}
+    </div>`;
   });
 }
 
