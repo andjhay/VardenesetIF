@@ -12,6 +12,7 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="./js/main.js" type="module" defer></script>
     <!-- Hotjar Tracking Code for Vardeneset IF -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -137,56 +138,7 @@
             <li>Betaling: Nettbetaling ved påmelding</li>
           </ul>
         </div>
-
-        <div class="col">
-          <h5>Tirsdag</h5>
-          <table class="table table-striped">
-            <tr>
-              <th>Tid</th>
-              <th>Kurs</th>
-            </tr>
-            <tr>
-              <td>17:00 - 17:30</td>
-              <td>Hvalmerket</td>
-            </tr>
-            <tr>
-              <td>17:30 - 18:00</td>
-              <td>Skilpaddemerket</td>
-            </tr>
-            <tr>
-              <td>18:00 - 18:30</td>
-              <td>Pingvinmerket</td>
-            </tr>
-            <tr>
-              <td>18:30 - 19:00</td>
-              <td>Selungemerket</td>
-            </tr>
-          </table>
-
-          <h5>Torsdag</h5>
-          <table class="table table-striped">
-            <tr>
-              <th>Tid</th>
-              <th>Kurs</th>
-            </tr>
-            <tr>
-              <td>17:00 - 17:30</td>
-              <td>Hvalmerket</td>
-            </tr>
-            <tr>
-              <td>17:30 - 18:00</td>
-              <td>Skilpaddemerket</td>
-            </tr>
-            <tr>
-              <td>18:00 - 18:30</td>
-              <td>Pingvinmerket</td>
-            </tr>
-            <tr>
-              <td>18:30 - 19:00</td>
-              <td>Selungemerket</td>
-            </tr>
-          </table>
-        </div>
+        <div id="timetable" class="col"></div>
         <div class="col">
           <h3>VIF vil informere dere om at:</h3>
           <ul>

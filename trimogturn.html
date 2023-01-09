@@ -12,6 +12,7 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="./js/main.js" type="module" defer></script>
     <!-- Hotjar Tracking Code for Vardeneset IF -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -119,38 +120,7 @@
       <h1 class="text-center p-3">Trim og Turn</h1>
       <div class="row row-cols-1 row-cols-lg-2 pb-5">
         <div class="col">
-          <h5>Mandag</h5>
-          <table class="table table-striped">
-            <tr>
-              <th>Tid</th>
-              <th>Aktivitet</th>
-              <th>Gruppe</th>
-            </tr>
-            <tr>
-              <td>18:00 - 19:00</td>
-              <td>Stevneparti</td>
-              <td>Voksne</td>
-            </tr>
-            <tr>
-              <td>17:30 - 18:00</td>
-              <td>Dance Fitness og styrke med vekter</td>
-              <td>Ungdom/Voksne</td>
-            </tr>
-          </table>
-
-          <h5>Onsdag</h5>
-          <table class="table table-striped">
-            <tr>
-              <th>Tid</th>
-              <th>Aktivitet</th>
-              <th>Gruppe</th>
-            </tr>
-            <tr>
-              <td>18:30 - 20:00</td>
-              <td>Dance Fitness og styrke med vekter</td>
-              <td>Ungdom/Voksne</td>
-            </tr>
-          </table>
+          <div id="timetable"></div>
           <p>Priser Ungdom/Voksne: kr. 600,- pr. halvår + 100,- medl. avgift pr. år.</p>
           <div
             class="fb-page"
