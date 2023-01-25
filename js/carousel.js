@@ -4,7 +4,6 @@ export function loadCarousel(mediaData) {
     if (media.caption.rendered.toLowerCase().includes("carousel")) {
       carouselMedia.push(media);
     }
-    console.log(carouselMedia);
   });
   const carouselContainer = document.getElementById("carousel");
   carouselMedia.forEach((media, index) => {
