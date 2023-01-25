@@ -1,35 +1,27 @@
-export function loadInnebandy(pageData) {
-  const timetableContainer = document.querySelector("#timetable");
-  timetableContainer.innerHTML = `
-      <h3>${pageData[2].title.rendered}</h3>
-      ${pageData[2].content.rendered}
+export function loadContent(pageData, path) {
+  const timetableContainer = document.getElementById("timetable");
+  const informationContainer = document.getElementById("information");
+  let loadPage;
+  pageData.forEach((page) => {
+    if (page.link.toLowerCase().includes(path)) {
+      loadPage = pageData.indexOf(page);
+      if (timetableContainer && pageData[loadPage].link.toLowerCase().includes("treningstider")) {
+        timetableContainer.innerHTML = `
+      <h3>${pageData[loadPage].title.rendered}</h3>
+      ${pageData[loadPage].content.rendered}
     `;
-  const tables = document.querySelectorAll("table");
-  tables.forEach((table) => {
-    table.classList.add("table", "table-striped");
-  });
-}
-
-export function loadTrim(pageData) {
-  const timetableContainer = document.querySelector("#timetable");
-  timetableContainer.innerHTML = `
-      <h3>${pageData[1].title.rendered}</h3>
-      ${pageData[1].content.rendered}
+      }
+      if (informationContainer && pageData[loadPage].link.toLowerCase().includes("informasjon")) {
+        informationContainer.innerHTML = `
+      ${pageData[loadPage].content.rendered}
     `;
-  const tables = document.querySelectorAll("table");
-  tables.forEach((table) => {
-    table.classList.add("table", "table-striped");
-  });
-}
-
-export function loadSvomming(pageData) {
-  const timetableContainer = document.querySelector("#timetable");
-  timetableContainer.innerHTML = `
-      <h3>${pageData[0].title.rendered}</h3>
-      ${pageData[0].content.rendered}
-    `;
-  const tables = document.querySelectorAll("table");
-  tables.forEach((table) => {
-    table.classList.add("table", "table-striped");
+      }
+      const tables = document.querySelectorAll("table");
+      if (tables) {
+        tables.forEach((table) => {
+          table.classList.add("table", "table-striped");
+        });
+      }
+    }
   });
 }

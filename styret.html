@@ -12,22 +12,7 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Hotjar Tracking Code for Vardeneset IF -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3311233, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+    <script src="./js/main.js" type="module" defer></script>
   </head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YY7L23Q7FW"></script>
@@ -43,7 +28,7 @@
   <body class="d-flex flex-column min-vh-100">
     <header class="bg-primary shadow">
       <nav class="navbar navbar-expand-md container">
-        <a class="navbar-brand mx-4" href="index.html"
+        <a class="navbar-brand mx-4" href="./"
           ><img src="./img/vardenesetiflogotransparant.png" alt="Vardeneset Idrettsforening Logo" width="100px"
         /></a>
         <button
@@ -60,7 +45,7 @@
         <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
           <ul class="navbar-nav w-100 mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Hjem</a>
+              <a class="nav-link" href="./">Hjem</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -106,19 +91,7 @@
     </header>
     <main class="container">
       <h1 class="text-center p-3">Styret</h1>
-      <div class="pb-5">
-        <h5>Styret består av:</h5>
-        <ul>
-          <li>Styreleder -</li>
-          <li>Styremedlem - Marianne Mydland</li>
-          <li>Styremedlem - Vanessa Hundsnes</li>
-          <li>Styremedlem - Bente Johannesen Overaa</li>
-          <li>Styremedlem - Unni Salte</li>
-          <li>Styremedlem - Yvonne Veberg</li>
-          <li>Styremedlem - Trond Kvilhaug</li>
-          <li>Styremedlem - Eigil Nielsen</li>
-        </ul>
-      </div>
+      <div id="information" class="pb-5"></div>
     </main>
     <footer class="bg-primary mt-auto">
       <p class="text-center pt-2 m-0">

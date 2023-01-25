@@ -1,7 +1,9 @@
-export function loadPosts(postsData) {
+import { postsData } from "./fetch.js";
+
+export function loadPosts(posts) {
   const newsContainer = document.querySelector("#newsContainer");
   newsContainer.innerHTML = "";
-  postsData.forEach((post) => {
+  posts.forEach((post) => {
     const dateFormat = `${post.date.slice(8, 10) + "-" + post.date.slice(5, 7) + "-" + post.date.slice(0, 4)}`;
     if (post._embedded["wp:featuredmedia"] == undefined) {
       newsContainer.innerHTML += `
@@ -20,4 +22,39 @@ export function loadPosts(postsData) {
     </div>`;
     }
   });
+  searchPosts(postsData);
+}
+
+function searchPosts(postsData) {
+  const form = document.querySelector("#search");
+
+  if (form) {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+      const searchTerm = Object.fromEntries(formData.entries()).search;
+      sortPosts(searchTerm.toLowerCase(), postsData);
+    });
+  }
+}
+
+async function sortPosts(searchTerm, postsData) {
+  const postsToSearch = postsData;
+  console.log(postsToSearch);
+  const searchedPosts = postsToSearch.filter((post) => {
+    if (
+      post.title.rendered.toLowerCase().includes(searchTerm) == true ||
+      post.content.rendered.toLowerCase().includes(searchTerm) == true
+    ) {
+      return true;
+    }
+  });
+  const newsContainer = document.querySelector("#newsContainer");
+  newsContainer.innerHTML = "";
+  if (searchedPosts.length == 0) {
+    newsContainer.innerHTML = "<h3>Ingen Treff</h3>";
+  } else {
+    loadPosts(searchedPosts);
+  }
 }

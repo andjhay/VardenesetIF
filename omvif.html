@@ -12,22 +12,7 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Hotjar Tracking Code for Vardeneset IF -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3311233, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+    <script src="./js/main.js" type="module" defer></script>
   </head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YY7L23Q7FW"></script>
@@ -43,7 +28,7 @@
   <body class="d-flex flex-column min-vh-100">
     <header class="bg-primary shadow">
       <nav class="navbar navbar-expand-md container">
-        <a class="navbar-brand mx-4" href="index.html"
+        <a class="navbar-brand mx-4" href="./"
           ><img src="./img/vardenesetiflogotransparant.png" alt="Vardeneset Idrettsforening Logo" width="100px"
         /></a>
         <button
@@ -60,7 +45,7 @@
         <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
           <ul class="navbar-nav w-100 mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Hjem</a>
+              <a class="nav-link" href="./">Hjem</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -73,7 +58,7 @@
                 Klubben
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item active" href="klubben.html">Om VIF</a></li>
+                <li><a class="dropdown-item active" href="omvif.html">Om VIF</a></li>
                 <li><a class="dropdown-item" href="styret.html">Styret</a></li>
               </ul>
             </li>
@@ -106,32 +91,7 @@
     </header>
     <main class="container">
       <h1 class="text-center p-3">Om Vardeneset Idrettsforening</h1>
-      <div class="pb-5">
-        <p>
-          21. november 1975 ble Vardeneset Idrettsforening (VIF) stiftet. Vi holder fremdeles på med våre aktiviteter,
-          turn, svømming, innebandy for både barn og voksne. Treningene er lagt til Vardenes Skole og Fjellhallen
-          (innebandy).
-        </p>
-
-        <p>
-          Vi holder hovedsakelig til på Vardenes. Vardeneset Idrettsforening er drevet frivillig av ildsjeler her i
-          bydelen. Medlemsavgift og kontigent er holdt så lav som mulig, så at alle her i bydelen har mulighet å delta.
-          VIF tilbyr både spennende trening på lokal skoler/haller, og vi er alltid på let etter nye impulser.
-        </p>
-        <p>
-          Har du noe du brenne for eller noe du kan bidra med? Da kan du ta kontakt her. Mange av våre unge instuktører
-          er bydels ungdommer og en flotte mulighet for dem å tjene noen kroner. Ta kontakt om du har en ungdom hjemme
-          som kanskje er interessert å jobbe for oss. <br />
-          For at VIF skal har en framtid, trenger vi dere til å være med, som deltakere, oppmann, trenere og
-          instruktører eller til å sitte i styret.
-        </p>
-        <ul>
-          <li>LEDIG STILLING: Styreleder</li>
-          <li>LEDIG STILLING: Svømme Instruktør - opplæring og kurs følger med</li>
-        </ul>
-        <p>Ta kontakt for mer informasjon</p>
-        <a href="mailto: post@vardeneset.no"> post@vardenesetif.no </a>
-      </div>
+      <div id="information" class="pb-5"></div>
     </main>
     <footer class="bg-primary mt-auto">
       <p class="text-center pt-2 m-0">
