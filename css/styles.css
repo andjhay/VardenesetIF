@@ -1,23 +1,4 @@
 @charset "UTF-8";
-.loading {
-  margin: auto;
-  border: 6px solid #e20c0c;
-  border-top: 6px solid #000;
-  border-bottom: 6px solid #000;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -7240,8 +7221,16 @@ textarea.form-control-lg {
   width: 25% !important;
 }
 
+.w-33 {
+  width: 33% !important;
+}
+
 .w-50 {
   width: 50% !important;
+}
+
+.w-66 {
+  width: 66% !important;
 }
 
 .w-75 {
@@ -8312,6 +8301,27 @@ textarea.form-control-lg {
   .d-sm-none {
     display: none !important;
   }
+  .w-sm-25 {
+    width: 25% !important;
+  }
+  .w-sm-33 {
+    width: 33% !important;
+  }
+  .w-sm-50 {
+    width: 50% !important;
+  }
+  .w-sm-66 {
+    width: 66% !important;
+  }
+  .w-sm-75 {
+    width: 75% !important;
+  }
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .w-sm-auto {
+    width: auto !important;
+  }
   .flex-sm-fill {
     flex: 1 1 auto !important;
   }
@@ -8807,6 +8817,27 @@ textarea.form-control-lg {
   }
   .d-md-none {
     display: none !important;
+  }
+  .w-md-25 {
+    width: 25% !important;
+  }
+  .w-md-33 {
+    width: 33% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .w-md-66 {
+    width: 66% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-100 {
+    width: 100% !important;
+  }
+  .w-md-auto {
+    width: auto !important;
   }
   .flex-md-fill {
     flex: 1 1 auto !important;
@@ -9304,6 +9335,27 @@ textarea.form-control-lg {
   .d-lg-none {
     display: none !important;
   }
+  .w-lg-25 {
+    width: 25% !important;
+  }
+  .w-lg-33 {
+    width: 33% !important;
+  }
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-66 {
+    width: 66% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  .w-lg-100 {
+    width: 100% !important;
+  }
+  .w-lg-auto {
+    width: auto !important;
+  }
   .flex-lg-fill {
     flex: 1 1 auto !important;
   }
@@ -9800,6 +9852,27 @@ textarea.form-control-lg {
   .d-xl-none {
     display: none !important;
   }
+  .w-xl-25 {
+    width: 25% !important;
+  }
+  .w-xl-33 {
+    width: 33% !important;
+  }
+  .w-xl-50 {
+    width: 50% !important;
+  }
+  .w-xl-66 {
+    width: 66% !important;
+  }
+  .w-xl-75 {
+    width: 75% !important;
+  }
+  .w-xl-100 {
+    width: 100% !important;
+  }
+  .w-xl-auto {
+    width: auto !important;
+  }
   .flex-xl-fill {
     flex: 1 1 auto !important;
   }
@@ -10295,6 +10368,27 @@ textarea.form-control-lg {
   }
   .d-xxl-none {
     display: none !important;
+  }
+  .w-xxl-25 {
+    width: 25% !important;
+  }
+  .w-xxl-33 {
+    width: 33% !important;
+  }
+  .w-xxl-50 {
+    width: 50% !important;
+  }
+  .w-xxl-66 {
+    width: 66% !important;
+  }
+  .w-xxl-75 {
+    width: 75% !important;
+  }
+  .w-xxl-100 {
+    width: 100% !important;
+  }
+  .w-xxl-auto {
+    width: auto !important;
   }
   .flex-xxl-fill {
     flex: 1 1 auto !important;
@@ -10797,6 +10891,70 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.loading {
+  margin: auto;
+  border: 6px solid #e20c0c;
+  border-top: 6px solid #000;
+  border-bottom: 6px solid #000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+html {
+  overflow-y: scroll;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: #e20c0c;
+  height: 3px;
+  width: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all 0.35s ease-out;
+  transform-origin: center left;
+}
+
+.navbar-toggler #top {
+  transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler #mid {
+  opacity: 0;
+}
+
+.navbar-toggler #bot {
+  transform: translate(15%, 33%) rotate(-45deg);
+}
+
+.navbar-toggler.collapsed #top {
+  transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler.collapsed #mid {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed #bot {
+  transform: translate(0%, 0%) rotate(0deg);
 }
 
 /*# sourceMappingURL=styles.css.map */

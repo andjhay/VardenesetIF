@@ -32,7 +32,7 @@
           ><img src="./img/vardenesetiflogotransparant.png" alt="Vardeneset Idrettsforening Logo" width="100px"
         /></a>
         <button
-          class="navbar-toggler mx-4 mb-1"
+          class="navbar-toggler collapsed mx-4"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -40,7 +40,9 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span id="top"></span>
+          <span id="mid"></span>
+          <span id="bot"></span>
         </button>
         <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
           <ul class="navbar-nav w-100 mb-2 mb-md-0">
@@ -90,7 +92,7 @@
       </nav>
     </header>
     <main class="container">
-      <h1 class="text-center p-3">Styret</h1>
+      <h1 id="title" class="text-center p-3"></h1>
       <div id="information" class="pb-5"></div>
     </main>
     <footer class="bg-primary mt-auto">

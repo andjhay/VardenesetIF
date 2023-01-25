@@ -1,6 +1,7 @@
 export function loadContent(pageData, path) {
   const timetableContainer = document.getElementById("timetable");
   const informationContainer = document.getElementById("information");
+  const pageTitle = document.getElementById("title");
   let loadPage;
   pageData.forEach((page) => {
     if (page.link.toLowerCase().includes(path)) {
@@ -12,6 +13,7 @@ export function loadContent(pageData, path) {
     `;
       }
       if (informationContainer && pageData[loadPage].link.toLowerCase().includes("informasjon")) {
+        pageTitle.innerHTML = `${pageData[loadPage].title.rendered}`;
         informationContainer.innerHTML = `
       ${pageData[loadPage].content.rendered}
     `;
