@@ -41,7 +41,6 @@ function searchPosts(postsData) {
 
 async function sortPosts(searchTerm, postsData) {
   const postsToSearch = postsData;
-  console.log(postsToSearch);
   const searchedPosts = postsToSearch.filter((post) => {
     if (
       post.title.rendered.toLowerCase().includes(searchTerm) == true ||

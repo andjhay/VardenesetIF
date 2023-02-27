@@ -34,6 +34,7 @@ $dark: $gray-900 !default;
 
 $logo: #e20c0c !default;
 $main: #acd6f4 !default;
+$main-light: #d4e3ee !default;
 
 $theme-colors: (
   "primary": $main,
@@ -42,7 +43,7 @@ $theme-colors: (
   "info": $info,
   "warning": $warning,
   "danger": $danger,
-  "light": $light,
+  "light": $main-light,
   "dark": $dark,
 ) !default;
 

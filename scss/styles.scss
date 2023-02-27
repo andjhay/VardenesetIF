@@ -1,6 +1,10 @@
 @import "_variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+.carousel img {
+  max-height: 75vh;
+}
+
 // Custom Loading Graphic
 
 .loading {
