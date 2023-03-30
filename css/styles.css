@@ -10893,7 +10893,7 @@ textarea.form-control-lg {
   }
 }
 .carousel img {
-  max-height: 75vh;
+  height: 50vh;
 }
 
 .loading {
