@@ -2,7 +2,13 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 .carousel img {
-  height: 50vh;
+  height: 35vh;
+}
+
+@include media-breakpoint-up(md) {
+  .carousel img {
+    height: 50vh;
+  }
 }
 
 // Custom Loading Graphic

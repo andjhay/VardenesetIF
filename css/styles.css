@@ -10893,9 +10893,14 @@ textarea.form-control-lg {
   }
 }
 .carousel img {
-  height: 50vh;
+  height: 35vh;
 }
 
+@media (min-width: 768px) {
+  .carousel img {
+    height: 50vh;
+  }
+}
 .loading {
   margin: auto;
   border: 6px solid #e20c0c;
