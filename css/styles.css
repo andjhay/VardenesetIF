@@ -10892,12 +10892,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.carousel img {
+.carousel-item img {
   height: 35vh;
+  max-width: 80vw;
 }
 
 @media (min-width: 768px) {
-  .carousel img {
+  .carousel-item img {
     height: 50vh;
   }
 }

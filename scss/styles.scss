@@ -1,12 +1,13 @@
 @import "_variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-.carousel img {
+.carousel-item img {
   height: 35vh;
+  max-width: 80vw;
 }
 
 @include media-breakpoint-up(md) {
-  .carousel img {
+  .carousel-item img {
     height: 50vh;
   }
 }
