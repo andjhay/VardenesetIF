@@ -10892,14 +10892,18 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  overflow-y: scroll;
+}
+
 .carousel-item img {
-  height: 35vh;
+  max-height: 35vh;
   max-width: 80vw;
 }
 
 @media (min-width: 768px) {
   .carousel-item img {
-    height: 50vh;
+    max-height: 50vh;
   }
 }
 .loading {
@@ -10921,10 +10925,6 @@ textarea.form-control-lg {
     transform: rotate(360deg);
   }
 }
-html {
-  overflow-y: scroll;
-}
-
 .navbar-toggler:focus {
   box-shadow: none;
 }

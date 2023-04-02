@@ -1,14 +1,22 @@
 @import "_variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+// Scroll on all pages
+
+html {
+  overflow-y: scroll;
+}
+
+// Carousel img sizing
+
 .carousel-item img {
-  height: 35vh;
+  max-height: 35vh;
   max-width: 80vw;
 }
 
 @include media-breakpoint-up(md) {
   .carousel-item img {
-    height: 50vh;
+    max-height: 50vh;
   }
 }
 
@@ -32,12 +40,6 @@
   100% {
     transform: rotate(360deg);
   }
-}
-
-// Scroll on all pages
-
-html {
-  overflow-y: scroll;
 }
 
 // Nav hamburger menu button
