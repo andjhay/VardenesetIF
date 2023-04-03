@@ -1,5 +1,8 @@
 User-agent: *
 Disallow: /wordpress/
 Disallow: /img/logos/
+Disallow: /img/originals/
 Disallow: /404.html
+Disallow: /personvern.html
+Disallow: /cookies.html
 Sitemap: https://vardenesetif.no/sitemap.xml
